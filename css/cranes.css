@@ -1,0 +1,101 @@
+.container{
+    background-color: rgb(203, 130, 130);
+    height: 1350px;
+    width:1200px;
+    margin-left: 70px;
+}
+.header{
+    font-size: 27px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    margin-left: 500px;
+}
+.img1{
+    display: flex;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 290px;
+    transition: 0.6s;
+    border: 3px solid black;
+}
+.img1:hover{
+    height: 300px;
+}
+
+.img2{
+    display: flex;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 620px;
+    height: 290px;
+    transition: 0.6s;
+    border: 3px solid black;
+}
+.img2:hover{
+    height: 300px;
+}
+
+.img3{
+    display: flex;
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 20px;
+    height: 290px;
+    transition: 0.6s;
+    border: 3px solid black;
+}
+.img3:hover{
+    height: 300px;
+}
+
+.img4{
+    display: flex;
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 620px;
+    height: 290px;
+    transition: 0.6s;
+    border: 3px solid black;
+}
+.img4:hover{
+    height: 300px;
+}
+
+.img5{
+    display: flex;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 20px;
+    height: 290px;
+    transition: 0.6s;
+    border: 3px solid black;
+}
+.img5:hover{
+    height: 300px;
+}
+
+.img6{
+    display: flex;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 620px;
+    height: 290px;
+    transition: 0.6s;
+    border: 3px solid black;
+}
+.img6:hover{
+    height: 300px;
+}
+
+.img7{
+    display: flex;
+    position: absolute;
+    margin-top: 1030px;
+    margin-left: 320px;
+    height: 290px;
+    transition: 0.6s;
+    border: 3px solid black;
+}
+.img7:hover{
+    height: 300px;
+}
