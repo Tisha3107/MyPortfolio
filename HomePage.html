@@ -638,53 +638,59 @@
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES </h4>
                     <!--==== Contact Form====-->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control form-input-name" placeholder="Name">
+                    <form>
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-input-name" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control form-input-email"
+                                                placeholder="Email">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control form-input-email" placeholder="Email">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-input-subject"
+                                                placeholder="Subject">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control form-input-subject"
-                                            placeholder="Subject">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-input-message"
+                                                placeholder="Message"></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea class="form-control form-input-message"
-                                            placeholder="Message"></textarea>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <button type="button" class="btn form-submit-btn" onclick=sendMail()>Send
+                                                Message</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <button type="button" class="btn form-submit-btn">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <p class="form-success-message" style="display: none;">Thank you! Your message
-                                            has been sent successfully.</p>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <p class="form-success-message" style="display: none;">Thank you! Your
+                                                message
+                                                has been sent successfully.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+
 
                     <!--====Contact section Ends====-->
                 </div>
@@ -717,6 +723,17 @@
 
         <script src="js/script.js"></script>
         <script src="js/style-switcherr.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "skKFLKqCLGgynir46",
+                });
+            })();
+        </script>
+
 </body>
 
 </html>

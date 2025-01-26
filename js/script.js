@@ -40,6 +40,7 @@ document
       successMessage.style.display = "block";
       successMessage.textContent =
         "Thank you! Your message has been sent successfully.";
+      resetFormFields();
     } else {
       successMessage.style.display = "block";
       successMessage.style.color = "#dc3545";
@@ -49,3 +50,23 @@ document
         "Please fill in all fields before submitting.";
     }
   });
+
+const sendMail = () => {
+  const parameters = {
+    from_name: document.querySelector(".form-input-name").value,
+    from_email: document.querySelector(".form-input-email").value,
+    from_subject: document.querySelector(".form-input-subject").value,
+    message: document.querySelector(".form-input-message").value,
+  };
+  console.log(parameters);
+  emailjs
+    .send("service_1i9y1y2", "template_sako0fc", parameters)
+    .then((res) => {});
+};
+
+const resetFormFields = () => {
+  document.querySelector(".form-input-name").value = "";
+  document.querySelector(".form-input-email").value = "";
+  document.querySelector(".form-input-subject").value = "";
+  document.querySelector(".form-input-message").value = "";
+};
