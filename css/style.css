@@ -53,6 +53,32 @@ ul
     opacity: 1;
 }
 
+.form-success-message {
+    color: #28a745;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #e6f7e9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #28a745;
+}
+
+.form-submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #0056b3;
+}
+
 .header1{
     margin-left: 400px;
     font-size: 28px;
